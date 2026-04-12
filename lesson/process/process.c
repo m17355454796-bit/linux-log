@@ -21,7 +21,7 @@ void process(double downloaded, double total)
 
     printf("[%-100s][%.2f%%][%c]\r", arr, rate, str[pos]);
     fflush(stdout);
-    usleep(100000);
+    usleep(50);
 
     pos = (pos + 1) % 4;
 }
